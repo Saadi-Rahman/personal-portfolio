@@ -1,0 +1,910 @@
+/* ================= CSS RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Hover */
+.navbar .nav-link:hover {
+  font-weight: 700;
+}
+
+/* ================= HERO SLIDER ================= */
+
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slider .carousel-item {
+  height: 650px;
+  position: relative;
+}
+
+.hero-slider .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark Overlay */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.58);
+}
+
+/* Hero Content */
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+
+  transform: translateY(-50%);
+
+  text-align: left;
+
+  bottom: auto;
+
+  padding-left: 120px;
+  padding-right: 12px;
+}
+
+/* Small Heading */
+
+.hero-small-title {
+  display: inline-block;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+/* Main Heading */
+
+.hero-content h1 {
+  font-size: 58px;
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  margin-bottom: 10px;
+}
+
+/* Secondary Heading */
+
+.hero-content h2 {
+  font-size: 28px;
+  font-weight: 500;
+
+  margin-bottom: 20px;
+}
+
+/* Description */
+
+.hero-content p {
+  max-width: 650px;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-buttons .btn {
+  padding: 12px 28px;
+  font-weight: 600;
+
+  border-radius: 5px;
+}
+
+/* Carousel Indicators */
+
+.hero-slider .carousel-indicators {
+  bottom: 30px;
+}
+
+.hero-slider .carousel-indicators button {
+  width: 35px;
+  height: 4px;
+
+  border: 0;
+  border-radius: 5px;
+
+  margin: 0 5px;
+}
+
+/* Carousel Arrows */
+
+.hero-slider .carousel-control-prev,
+.hero-slider .carousel-control-next {
+  width: 7%;
+}
+
+/* home page clients section */
+/* ================= CLIENT FEEDBACK ================= */
+
+.client-review-card {
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.client-review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Client Information */
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Client Image */
+
+.client-photo {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+}
+
+.client-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Client Details */
+
+.client-details h5 {
+  margin-bottom: 5px;
+}
+
+.client-position {
+  color: #0d6efd;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Client Rating */
+
+.client-rating {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.client-rating i {
+  color: #ffc107;
+}
+
+/* Review Time */
+
+.client-time {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.client-time i {
+  margin-right: 5px;
+}
+
+/* Client Review */
+
+.client-review {
+  color: #666;
+  line-height: 1.7;
+  margin: 20px 0 0;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+/* ================= PAGE TITLE ================= */
+
+.page-title-section {
+  background: #f5f5f5;
+  padding: 90px 0;
+}
+
+.page-title-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.page-title-content p:last-child {
+  color: #666;
+}
+
+/* ================= BIOGRAPHY ================= */
+
+.biography-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.biography-section h2,
+.skills-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.biography-section p {
+  line-height: 1.7;
+}
+
+/* ================= CLIENTS ================= */
+
+.client-logo {
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+
+  background: #fff;
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+.client-logo img {
+  max-height: 60px;
+  max-width: 140px;
+  object-fit: contain;
+}
+
+.client-logo:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= SKILLS ================= */
+
+.skill-item span {
+  font-weight: 600;
+}
+
+.skill-item .progress {
+  height: 8px;
+  border-radius: 10px;
+}
+
+.skill-item .progress-bar {
+  background-color: #0d6efd;
+  border-radius: 10px;
+}
+
+/* ================= PERSONAL INFORMATION ================= */
+
+.info-card {
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.info-card i {
+  font-size: 32px;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.info-card h5 {
+  margin-bottom: 5px;
+}
+
+/* ================= EDUCATION ================= */
+
+.education-card {
+  border-left: 4px solid #0d6efd;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.education-year {
+  display: inline-block;
+  color: #0d6efd;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* ================= SPECIAL SKILLS ================= */
+
+.special-skill-card {
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  background: #fff;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.special-skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.special-skill-card i {
+  font-size: 38px;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.special-skill-card h5 {
+  margin-bottom: 5px;
+}
+
+.special-skill-card p {
+  color: #777;
+  margin-bottom: 0;
+}
+
+/* ================= CERTIFICATION ================= */
+
+.certificate-card {
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.certificate-card > i {
+  font-size: 40px;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.certificate-card h4 {
+  font-size: 21px;
+}
+
+.certificate-card span {
+  color: #777;
+}
+
+/* ================= EXPERIENCE ================= */
+
+.experience-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  display: flex;
+  gap: 40px;
+
+  padding: 30px 0;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.experience-year {
+  min-width: 130px;
+
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+.experience-content h3 {
+  margin-bottom: 5px;
+}
+
+.experience-content h5 {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.experience-content p {
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ================= SERVICES ================= */
+
+.service-card {
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  background: #fff;
+
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  margin-bottom: 20px;
+}
+
+.service-icon i {
+  font-size: 45px;
+  color: #0d6efd;
+}
+
+.service-card h4 {
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ================= CLIENT CARDS ================= */
+
+.client-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.client-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Client Image */
+
+.client-image {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 20px;
+}
+
+.client-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Client Name */
+
+.client-card h5 {
+  margin-bottom: 5px;
+}
+
+/* Client Role */
+
+.client-role {
+  color: #0d6efd;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Client Review */
+
+.client-review {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* ================= FAQ ================= */
+
+.faq-section .accordion {
+  max-width: 900px;
+}
+
+.faq-section .accordion-item {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.faq-section .accordion-button {
+  font-weight: 600;
+  padding: 20px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  color: #0d6efd;
+  background-color: #f5f8ff;
+  box-shadow: none;
+}
+
+.faq-section .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq-section .accordion-body {
+  line-height: 1.7;
+  color: #666;
+}
+
+/* ================= DIRECT CONTACT ================= */
+
+.direct-contact-card {
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.direct-contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-icon {
+  margin-bottom: 15px;
+}
+
+.contact-icon i {
+  font-size: 35px;
+  color: #0d6efd;
+}
+
+.direct-contact-card h5 {
+  margin-bottom: 8px;
+}
+
+.direct-contact-card p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* ================= CONTACT FORM ================= */
+
+.contact-form-box {
+  border-radius: 10px;
+}
+
+.contact-form-box h2,
+.map-box h2 {
+  margin-bottom: 15px;
+}
+
+.contact-form-box .form-label {
+  font-weight: 600;
+}
+
+.contact-form-box .form-control {
+  padding: 12px 15px;
+}
+
+.contact-form-box textarea {
+  resize: vertical;
+}
+
+/* ================= GOOGLE MAP ================= */
+
+.map-box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.google-map {
+  width: 100%;
+}
+
+.google-map iframe {
+  display: block;
+  width: 100%;
+}
+
+/* ================= FORM MESSAGE ================= */
+
+#formMessage {
+  margin-bottom: 20px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background-color: #151515;
+  color: #ffffff;
+  padding: 60px 0 20px;
+}
+
+/* Logo */
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Footer Title */
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Footer Text */
+
+.footer-text {
+  color: #b5b5b5;
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+/* Quick Links */
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #b5b5b5;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+/* Social Icons */
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social a {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #555;
+  border-radius: 50%;
+
+  color: #b5b5b5;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Live Date and Time */
+
+.live-time {
+  margin-top: 20px;
+  color: #b5b5b5;
+  font-size: 14px;
+}
+
+.live-time i {
+  margin-right: 6px;
+}
+
+/* ================= FOOTER MOBILE ================= */
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 45px 0 20px;
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+  }
+}
+
+/* ================= CONTACT MOBILE ================= */
+
+@media (max-width: 767px) {
+  .contact-form-box {
+    padding: 25px !important;
+  }
+
+  .google-map iframe {
+    height: 400px;
+  }
+}
+
+/* ================= SERVICE MOBILE ================= */
+
+@media (max-width: 767px) {
+  .service-card {
+    padding: 30px !important;
+  }
+
+  .service-icon i {
+    font-size: 40px;
+  }
+
+  .faq-section .accordion-button {
+    padding: 16px;
+    font-size: 15px;
+  }
+}
+
+/* ================= PORTFOLIO MOBILE ================= */
+
+@media (max-width: 767px) {
+  .experience-item {
+    display: block;
+  }
+
+  .experience-year {
+    margin-bottom: 10px;
+  }
+
+  .certificate-card {
+    text-align: center;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+  .page-title-section {
+    padding: 65px 0;
+  }
+
+  .page-title-content h1 {
+    font-size: 36px;
+  }
+
+  .biography-section h2,
+  .skills-section h2 {
+    font-size: 30px;
+  }
+}
+
+/* ================= MEDIUM SCREEN ================= */
+
+@media (max-width: 991px) {
+  .hero-slider .carousel-item {
+    height: 600px;
+  }
+
+  .hero-content {
+    padding-left: 60px;
+    padding-right: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 46px;
+  }
+
+  .hero-content h2 {
+    font-size: 24px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+  .hero-slider .carousel-item {
+    height: 600px;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .hero-small-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content h2 {
+    font-size: 20px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-buttons .btn {
+    padding: 10px 20px;
+  }
+
+  .hero-slider .carousel-control-prev,
+  .hero-slider .carousel-control-next {
+    width: 10%;
+  }
+}
+
+/* ======== Home page client card MOBILE ========== */
+
+@media (max-width: 575px) {
+  .client-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .client-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .client-details {
+    width: 100%;
+  }
+
+  .client-review {
+    text-align: center;
+  }
+}
