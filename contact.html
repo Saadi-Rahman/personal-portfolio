@@ -75,7 +75,7 @@
 
     <!-- ================= PAGE TITLE ================= -->
 
-    <section class="page-title-section">
+    <section class="page-title-section mb-5">
       <div class="container">
         <div class="page-title-content text-center">
           <p class="section-subtitle">Get In Touch</p>
@@ -89,7 +89,7 @@
 
     <!-- ================= DIRECT CONTACT INFORMATION ================= -->
 
-    <section class="direct-contact-section py-5">
+    <section class="direct-contact-section py-5 mb-5">
       <div class="container">
         <div class="section-heading text-center mb-5">
           <p class="section-subtitle">Contact Information</p>
@@ -147,109 +147,11 @@
       </div>
     </section>
 
-    <!-- ================= CONTACT FORM + MAP ================= -->
+    <!-- ================= MAP + CONTACT FORM ================= -->
 
-    <section class="contact-main-section py-5 bg-light">
-      <div class="container">
+    <section class="contact-main-section bg-light py-5">
+      <div class="container py-5">
         <div class="row g-5">
-          <!-- ================= CONTACT FORM ================= -->
-
-          <div class="col-lg-6">
-            <div class="contact-form-box bg-white p-4 p-md-5">
-              <div class="mb-4">
-                <p class="section-subtitle">Send A Message</p>
-
-                <h2>Contact Form</h2>
-
-                <p class="text-muted">
-                  Fill out the form below and I'll get back to you as soon as
-                  possible.
-                </p>
-              </div>
-
-              <!-- Success/Error Message -->
-
-              <div id="formMessage" class="alert d-none" role="alert"></div>
-
-              <form id="contactForm" novalidate>
-                <!-- Name -->
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Enter your name"
-                  />
-
-                  <small class="text-danger" id="nameError"></small>
-                </div>
-
-                <!-- Email -->
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Enter your email"
-                  />
-
-                  <small class="text-danger" id="emailError"></small>
-                </div>
-
-                <!-- Phone -->
-                <div class="mb-3">
-                  <label for="phone" class="form-label">Phone</label>
-
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phone"
-                    placeholder="Enter your phone number"
-                  />
-
-                  <small class="text-danger" id="phoneError"></small>
-                </div>
-
-                <!-- Address -->
-                <div class="mb-3">
-                  <label for="address" class="form-label">Address</label>
-
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="address"
-                    placeholder="Enter your address"
-                  />
-
-                  <small class="text-danger" id="addressError"></small>
-                </div>
-
-                <!-- Message -->
-                <div class="mb-4">
-                  <label for="message" class="form-label">Message</label>
-
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    rows="5"
-                    placeholder="Write your message"
-                  ></textarea>
-
-                  <small class="text-danger" id="messageError"></small>
-                </div>
-                <!-- Submit -->
-
-                <button type="submit" class="btn btn-primary">
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-
           <!-- ================= GOOGLE MAP ================= -->
 
           <div class="col-lg-6">
@@ -276,6 +178,110 @@
                 >
                 </iframe>
               </div>
+            </div>
+          </div>
+
+          <!-- ================= CONTACT FORM ================= -->
+
+          <div class="col-lg-6">
+            <div class="contact-form-box bg-white p-4 p-md-5">
+              <div class="mb-4">
+                <p class="section-subtitle">Send A Message</p>
+
+                <h2>Contact Form</h2>
+
+                <p class="text-muted">
+                  Fill out the form below and I'll get back to you as soon as
+                  possible.
+                </p>
+              </div>
+
+              <!-- Success/Error Message -->
+
+              <div id="formMessage" class="alert d-none" role="alert"></div>
+
+              <form id="contactForm" novalidate>
+                <!-- Name + Email -->
+                <div class="row">
+                  <!-- Name -->
+                  <div class="col-md-6 mb-3">
+                    <label for="name" class="form-label">Name</label>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter your name"
+                    />
+
+                    <small class="text-danger" id="nameError"></small>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email</label>
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter your email"
+                    />
+
+                    <small class="text-danger" id="emailError"></small>
+                  </div>
+                </div>
+
+                <!-- Phone + Address -->
+                <div class="row">
+                  <!-- Phone -->
+                  <div class="col-md-6 mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Enter your phone number"
+                    />
+
+                    <small class="text-danger" id="phoneError"></small>
+                  </div>
+
+                  <!-- Address -->
+                  <div class="col-md-6 mb-3">
+                    <label for="address" class="form-label">Address</label>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="address"
+                      placeholder="Enter your address"
+                    />
+
+                    <small class="text-danger" id="addressError"></small>
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="mb-4">
+                  <label for="message" class="form-label">Message</label>
+
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message"
+                  ></textarea>
+
+                  <small class="text-danger" id="messageError"></small>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -363,7 +369,7 @@
         <!-- Footer Bottom -->
 
         <div class="footer-bottom">
-          <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+          <p>&copy; 2026 Saadi Rahman. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
